@@ -1,6 +1,6 @@
 module.exports = function(grunt){
     
-    var config = grunt.option('con');
+    var config = grunt.file.readJSON(grunt.option('con'));
 
     grunt.loadNpmTasks('grunt-contrib-jasmine');
 
